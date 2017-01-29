@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xc8-gE-0Li">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Listing-->
+        <scene sceneID="dHf-zZ-IRc">
+            <objects>
+                <viewController id="Q4L-39-6MC" customClass="AddHomeViewController" customModule="SwiftRealty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HJW-zC-6YG"/>
+                        <viewControllerLayoutGuide type="bottom" id="mNd-wc-qWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lCN-Q7-Ea7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Listing" id="qdV-Ez-E3J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbu-Iv-YTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1393" y="-1103"/>
+        </scene>
+        <!--Swift Realty-->
+        <scene sceneID="BgQ-DE-rTR">
+            <objects>
+                <tableViewController id="qLL-bj-43i" customClass="SwiftRealtyTableViewController" customModule="SwiftRealty" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="eFF-IW-LN7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="i4q-v5-fgS">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i4q-v5-fgS" id="vZx-LC-Wq3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qLL-bj-43i" id="mlK-6i-xnM"/>
+                            <outlet property="delegate" destination="qLL-bj-43i" id="vh2-Fy-HXS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swift Realty" id="gZs-5j-s7O">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="jAo-wz-dHu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5SK-DR-cRR">
+                                <rect key="frame" x="272" y="5" width="87" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="newBlue"/>
+                                <connections>
+                                    <segue destination="Q4L-39-6MC" kind="show" id="rUZ-z2-3Vx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Y9b-pz-djE" kind="show" identifier="view_listing" id="r9d-LA-Dx2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aow-Lq-Syq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="-422"/>
+        </scene>
+        <!--View Listing-->
+        <scene sceneID="Lt5-2P-g35">
+            <objects>
+                <viewController id="Y9b-pz-djE" customClass="ViewHomeViewController" customModule="SwiftRealty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B2S-hs-Hw6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gf7-dy-QYj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q1i-UL-912">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Listing" id="Drz-io-hKt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6Z-F6-D4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2194" y="-422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FaO-Fc-MRw">
+            <objects>
+                <navigationController id="Xc8-gE-0Li" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p1G-a2-p4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qLL-bj-43i" kind="relationship" relationship="rootViewController" id="yf3-xg-bbv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQS-lp-K2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="-422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="newBlue" width="33" height="33"/>
+    </resources>
+</document>
