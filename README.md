@@ -1,8 +1,7 @@
 # SwiftRealtyComplete
 
-# Ride Cell Coding Challeneg (Parking Reservation App)
-
-This is a basic Xcode starter project for the demo app called "SwiftRealty" - a basic app that will be written in Swift for Apple iPhones. The purpose of the app is to teach iOS developers how to integrate Amazon Web Services into their projects. The app will allow realtors from a real estate agency the ability to add listings with data and images, that will then be stored in AWS S3 and AWS DynamoDB. The users will also be able to fetch and view all saved listings.
+# Swift Realty App (With Amazon AWS)
+This is the completed Xcode project for the demo app called "SwiftRealty" - a basic app written in Swift for Apple iPhones that uses Amazon Web Services to integrate The Cloud. The purpose of the app is to teach iOS developers how to integrate Amazon Web Services into their projects. The app will allow realtors from a real estate agency the ability to add listings with data and images, that will then be stored in AWS S3 and AWS DynamoDB. The users will also be able to fetch and view all saved listings.
 
 ## Prerequisites
 
